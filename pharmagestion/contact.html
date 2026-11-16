@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact- Pharmacie Ndéye Coumba</title>
+  </head>
+  <body>
+    <!-- L'entete-->
+    <div>
+      <img src="images/logo.png" width="60" height="60" alt="" />
+      <p><strong> Pharmacie Ndéye Coumba</strong></p>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Nos services</a></li>
+        <li><a href="horaires.html">Horaires et garde</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <hr />
+
+    <!-- Contact pharmacie-->
+    <h1>Nous contacter</h1>
+    <p>
+      Une question sur un produit ou une commande ? Écrivez-nous, nous vous
+      répondons dans la journée
+    </p>
+    <h2>Nos coordonnées</h2>
+    <ul>
+      <li>
+        Pharmacie Ndéye Coumba · Route principale, à côté du rond-point,
+        Guédiawaye
+      </li>
+      <li>Téléphone : 77 000 00 00</li>
+      <li>E-mail : pharmacie.ndeyecoumba@exemple.sn</li>
+    </ul>
+    <h2>Demander un produit</h2>
+    <form action="">
+      <fieldset>
+        <legend>Vos coordonnées</legend>
+        <label for="nom">Nom</label><br /><br />
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          placeholder="Awa Ndiaye"
+          minlength="3"
+          maxlength="50"
+        /><br /><br />
+        <label for="tel">Téléphone</label><br /><br />
+        <input
+          type="text"
+          id="tel"
+          minlength="9"
+          maxlength="12"
+          placeholder="77 000 00 00"
+          required
+        /><br /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Votre demande</legend>
+        <label for="prod">Produit</label><br /><br />
+        <input
+          type="text"
+          id="prod"
+          name="prod"
+          maxlength="80"
+          placeholder="Thermomètre digital"
+          required
+        /><br /><br />
+        <label for="qte">Quantité</label>
+        <input
+          type="number"
+          id="qte"
+          min="1"
+          max="10"
+          step="1"
+          value="1"
+        /><br /><br />
+        <input type="submit" value="Envoyer" />
+        <input type="reset" value="Effacer" />
+      </fieldset>
+    </form>
+    <h2>Nous trouver</h2>
+    <p>Plan d'accès à la pharmacie, à côté du rond-point de Guédiawaye</p>
+    <iframe
+      src="https://maps.google.com/maps?q=Gu%C3%A9diawaye&amp;z=14&amp;output=embed"
+      width="600"
+      height="400"
+      title="Carte de Guédiawaye : situation de la pharmacie"
+    ></iframe>
+    <a href="index.html">Retour à l'accueil</a>
+    <hr />
+
+    <!-- Le pied de page-->
+    <div>
+      <p>
+        Pharmacie Ndéye Coumba · Route principale, à côté du rond-point,
+        Guédiawaye
+      </p>
+      <p>
+        Téléphone : 77 000 00 00 · E-mail : pharmacie.ndeyecoumba@exemple.sn
+      </p>
+      <p>Ouvert du lundi au samedi, de 8 h à 22 h</p>
+      <p>
+        <a href="https://www.google.com/maps/search/Guédiawaye" target="_blank"
+          >Nous trouver sur la carte</a
+        >
+      </p>
+      <p><small> Projet pédagogique · structure fictive</small></p>
+    </div>
+  </body>
+</html>
