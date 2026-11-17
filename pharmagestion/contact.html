@@ -39,7 +39,7 @@
     <form action="">
       <fieldset>
         <legend>Vos coordonnées</legend>
-        <label for="nom">Nom</label><br /><br />
+        <label for="nom">Nom</label><br />
         <input
           type="text"
           id="nom"
@@ -47,8 +47,8 @@
           placeholder="Awa Ndiaye"
           minlength="3"
           maxlength="50"
-        /><br /><br />
-        <label for="tel">Téléphone</label><br /><br />
+        /><br />
+        <label for="tel">Téléphone</label><br />
         <input
           type="text"
           id="tel"
@@ -56,11 +56,14 @@
           maxlength="12"
           placeholder="77 000 00 00"
           required
-        /><br /><br />
-      </fieldset>
+        /><br />
+        <label for="">Email</label><br />
+        <input type="email" /><br />
+      </fieldset><br>
+
       <fieldset>
         <legend>Votre demande</legend>
-        <label for="prod">Produit</label><br /><br />
+        <label for="prod">Produit</label><br />
         <input
           type="text"
           id="prod"
@@ -68,7 +71,7 @@
           maxlength="80"
           placeholder="Thermomètre digital"
           required
-        /><br /><br />
+        /><br />
         <label for="qte">Quantité</label>
         <input
           type="number"
@@ -77,7 +80,38 @@
           max="10"
           step="1"
           value="1"
-        /><br /><br />
+        /><br />
+        <label for="motif">Objet</label><br />
+        <select name="motif" id="motif" required>
+          <option value="">Choisissez un objet</option>
+          <option value="produit">Question sur un produit</option>
+          <option value="">Commande d'un produit absent</option>
+          <option value="">Questions sur les gardes</option>
+          <option value="">Autre</option></select
+        ><br />
+        <label for="">Votre message</label><br />
+        <textarea name="" rows="5" maxlength="500" required id=""></textarea
+        ><br />
+        <label for="">Comment préférez-vous être recontacté ?</label><br />
+        <input
+          type="radio"
+          id="rep-appel"
+          name="reponse"
+          value="appel"
+          checked
+        />
+        <label for="rep-appel">Appel</label>
+        <input type="radio" id="rep-whatsapp" name="reponse" value="whatsapp" />
+        <label for="rep-whatsapp">Whatsapp</label>
+        <input type="radio" id="rep-email" name="reponse" value="email" />
+        <label for="rep-email">Email</label><br />
+        <label for=""
+          >J'accepte que la pharmacie utilise mes coordonnées pour me
+          répondre.</label
+        >
+        <input type="checkbox" required>
+
+        <br /><br>
         <input type="submit" value="Envoyer" />
         <input type="reset" value="Effacer" />
       </fieldset>
