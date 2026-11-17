@@ -35,11 +35,11 @@
       <li>Téléphone : 77 000 00 00</li>
       <li>E-mail : pharmacie.ndeyecoumba@exemple.sn</li>
     </ul>
-    <h2>Demander un produit</h2>
+    <h2>Écrivez-nous</h2>
     <form action="">
       <fieldset>
         <legend>Vos coordonnées</legend>
-        <label for="nom">Nom</label><br />
+        <label for="nom">Votre nom</label><br />
         <input
           type="text"
           id="nom"
@@ -48,7 +48,7 @@
           minlength="3"
           maxlength="50"
         /><br />
-        <label for="tel">Téléphone</label><br />
+        <label for="tel">Votre téléphone</label><br />
         <input
           type="text"
           id="tel"
@@ -57,30 +57,13 @@
           placeholder="77 000 00 00"
           required
         /><br />
-        <label for="">Email</label><br />
-        <input type="email" /><br />
-      </fieldset><br>
+        <label for="email">Votre email(facultatif)</label><br />
+        <input type="email" id="email" name="email" placeholder="awa.ndiaye@exemple.com" /><br />
+      </fieldset>
+      <br />
 
       <fieldset>
         <legend>Votre demande</legend>
-        <label for="prod">Produit</label><br />
-        <input
-          type="text"
-          id="prod"
-          name="prod"
-          maxlength="80"
-          placeholder="Thermomètre digital"
-          required
-        /><br />
-        <label for="qte">Quantité</label>
-        <input
-          type="number"
-          id="qte"
-          min="1"
-          max="10"
-          step="1"
-          value="1"
-        /><br />
         <label for="motif">Objet</label><br />
         <select name="motif" id="motif" required>
           <option value="">Choisissez un objet</option>
@@ -105,16 +88,15 @@
         <label for="rep-whatsapp">Whatsapp</label>
         <input type="radio" id="rep-email" name="reponse" value="email" />
         <label for="rep-email">Email</label><br />
-        <label for=""
-          >J'accepte que la pharmacie utilise mes coordonnées pour me
-          répondre.</label
-        >
-        <input type="checkbox" required>
-
-        <br /><br>
-        <input type="submit" value="Envoyer" />
-        <input type="reset" value="Effacer" />
       </fieldset>
+      <br />
+      <input type="checkbox" required />
+      <label for=""
+        >J'accepte que la pharmacie utilise mes coordonnées pour me
+        répondre.</label
+      ><br><br>
+      <input type="submit" value="Envoyer" />
+      <input type="reset" value="Effacer" />
     </form>
     <h2>Nous trouver</h2>
     <p>Plan d'accès à la pharmacie, à côté du rond-point de Guédiawaye</p>
@@ -123,7 +105,7 @@
       width="600"
       height="400"
       title="Carte de Guédiawaye : situation de la pharmacie"
-    ></iframe>
+    ></iframe><br>
     <a href="index.html">Retour à l'accueil</a>
     <hr />
 
