@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produit-form - Pharmacie Ndéye Coumba</title>
+</head>
+<body>
+    <h1>PharmaGestion · Dr Ndèye Coumba Faye, pharmacienne</h1>
+  <ul>
+        <li><a href="produit.html">Produits</a></li>
+        <li><a href="produit-form.html">Ajouter un produit</a></li>
+        <li><a href="vente.html">Vente au comptoir</a></li>
+        <li><a href="../index.html">Déconnexion</a></li>
+    </ul>
+    <h1>Ajouter un produit</h1>
+    <form action="produit.html">
+        <fieldset>
+            <legend>Le produit</legend>
+            <label for="ref">Référence</label><br>
+            <input type="text" id="ref" name="ref" maxlength="4" placeholder="P061" required><br>
+            <label for="nom-prod">Nom du produit</label><br>
+            <input type="text" id="nom-prod" name="nom-prod" required><br>
+            <label for="cat">Catégorie</label>
+            <select name="cat" id="cat" required>
+                <option value="">Douleur et fiévre</option>
+                <option value="">Rhume et allergies</option>
+                <option value="">Hygiéne</option>
+                <option value="">Digestion</option>
+                <option value="">Vitamines et compléments</option>
+                <option value="">Soins du corps et visage</option>
+                <option value="">Premiers secours et préventions</option>
+                <option value="">Bébé et maman</option>
+            </select><br>
+            <label for="type">Type</label><br>
+            Médicament<input type="radio" id="type" name="type" checked>
+            Parapharmacie<input type="radio" id="type" name="type"><br>
+            <label for="desc">Description</label><br>
+            <textarea name="desc" id="desc" rows="4"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Prix et stock</legend>
+            <label for="prix-achat">Prix d'achat</label><br>
+            <input type="number" id="prix-achat" name="prix-achat" min="0" step="50" required><br>
+            <label for="prix-vente">Prix de vente</label><br>
+            <input type="number" id="prix-vente" name="prix-vente" min="0" step="50" required><br>
+            <label for="stock">Stock</label><br>
+            <input type="number" id="stock" name="stock" value="0" min="0"><br>
+            <label for="seuil">Seuil d'alerte</label><br>
+            <input type="number" id="seuil" name="seuil" value="10" min="0">
+        </fieldset>
+        <fieldset>
+            <legend>Dates et fournisseur</legend>
+            <label for="date-frabr">Date de fabrication</label><br>
+            <input type="date" id="date-frabr" name="date-frabr" required><br>
+            <label for="date-perem">Date de péremption</label><br>
+            <input type="date" id="date-perem" name="date-perem" required><br>
+            <label for="fournisseur">Fournisseur</label><br>
+            <select name="fournisseur" id="fournisseur">
+                <option value="">Cofimed Afrique</option>
+                <option value="">Téranga Santé Distribution</option>
+                <option value="">ParaSahel</option>
+            </select><br>
+            <label for="img-prod">Image du produit</label><br>
+            <input type="file" id="img-prod" name="img-prod" accept="image/*"><br>
+            <input type="checkbox">Afficher dans le catalogue du site 
+        </fieldset>
+        <input type="submit" value="Enregistrer">
+        <input type="reset" value="Effacer">
+    </form>
+</body>
+</html>
