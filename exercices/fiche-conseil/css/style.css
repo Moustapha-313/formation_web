@@ -1,0 +1,100 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+h1, h2{
+    color: #146b45;
+}
+
+h1{
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+h2{
+    font-size: 22px;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+    color: #1f8a5b;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #146b45;
+    text-shadow: 1px 1px 2px #9fd3b8;
+}
+
+nav a{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#fiche-date{
+    font-size: 14px;
+    color: #6b6b6b;
+    text-align: right;
+}
+
+.chapeau{
+    font-size: 18px;
+    font-style: italic;
+    text-indent: 30px;
+}
+
+h2 + p{
+    font-weight: 600;
+    color: #146b45;;
+}
+
+.attention{
+    background: #fdecea;
+}
+
+.attention p{
+    font-weight: bold;
+    color: #c0392b;
+}
+
+a[target="_blank"]{
+    font-style: italic;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+input[type="email"], input[type="tel"]{
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="submit"]{
+    background: #1f8a5b;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover{
+    background: #146b45;
+}
+
+footer p{
+    font-size: 13px;
+    text-align: center;
+    color: #6b6b6b;
+}
