@@ -1,57 +1,60 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .boite{
-            border: 10px groove orangered;
-            width: 400px;
-            margin-left: 150px;
-            box-sizing: border-box;
+        #el1{
+            border: 10px groove rgb(151,72,3);
+            width: 250px;
+            margin-left: 100px;
+            padding: 10px;
+            font-size: 44px;
+            color: rgb(186,81,12);
+            text-shadow: 1px 1px 1px black;
+            margin-bottom: 50px;
         }
 
-        .boite h1{
-            font-size: 50px;
-            color: maroon;
-            text-shadow: 1px 1px 1px orangered;
-            padding-left: 20px;
-        }
-
-        .transformation{
-            width: 300px;
-            border: 3px solid orangered;
-            margin-top: 15px;
-            border-radius: 0 0px 130px 0px;
-            margin-left: 20px;
-            box-sizing: border-box;
-            box-shadow: 1px 1px 5px maroon;
-            box-sizing: border-box;
-            transition: 6s;
-        }
-
-        .transformation h2{
-            font-size: 20px;
-            font-family: Algerian, Georgia, serif;
-            text-transform: uppercase;
+        #el2{
+            width: 150px;
+            padding: 10px 20px;
             text-align: center;
-            text-shadow: 5px 5px 5px red;
+            border-bottom-right-radius: 25px;
+            font-family: algerian, georgia, serif;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 3px red;
+            box-shadow: 2px 2px 2px red, -2px -2px 2px red;
+            margin-bottom: 50px;
+
         }
 
-        .transformation:hover{
-            border-left: none;
-            border-top: none ;
-            transform: rotate(-45deg); 
+        #el2:hover{
+            transition: 3s;
+            transform: rotate(-45deg);
+            border-radius: 0px;
+            box-shadow: inset -3px -3px purple;
         }
-    </style> 
+
+
+        button{
+            border: none;
+            border-radius: 10px;
+            background: green;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: 2s;
+        }
+        button:hover{
+            background: red;
+            padding: 5px 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="boite">
-        <h1>Les modèles <br>de boites</h1>
-    </div>
-    <div class="transformation">
-        <h2>Transformation</h2>
-    </div>
+    <div id="el1">Les modèles de boite</div>
+    <div id="el2">Transformation</div> 
+    <button>Ajouter</button>   
 </body>
 </html>
